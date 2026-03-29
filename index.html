@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>parhlobhai</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <style>
         * {
             margin: 0;
@@ -14,22 +16,23 @@
             color: #e5e5e5;
             font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             line-height: 1.5;
-            padding: 2rem 1rem;
+            padding: 1rem;
         }
 
         .container {
             max-width: 1000px;
             margin: 0 auto;
+            width: 100%;
         }
 
         /* Logo Section */
         .logo-section {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .logo {
-            font-size: 3.5rem;
+            font-size: clamp(2.2rem, 8vw, 3.5rem);
             font-weight: 800;
             letter-spacing: -0.02em;
             background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
@@ -41,7 +44,7 @@
 
         .tagline {
             color: #888;
-            font-size: 1rem;
+            font-size: clamp(0.8rem, 3vw, 1rem);
         }
 
         /* Button Grid */
@@ -49,21 +52,40 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem;
-            margin: 3rem 0;
+            gap: 0.8rem;
+            margin: 2rem 0;
         }
 
         .btn {
             background: #141414;
             border: 1px solid #2a2a2a;
-            padding: 0.9rem 1.8rem;
+            padding: 0.8rem 1.2rem;
             border-radius: 40px;
             text-decoration: none;
             color: #e5e5e5;
             font-weight: 500;
-            font-size: 0.95rem;
+            font-size: clamp(0.8rem, 3vw, 0.95rem);
             transition: all 0.2s ease;
             display: inline-block;
+            text-align: center;
+            flex: 0 0 auto;
+            /* Make buttons easier to tap on mobile */
+            min-height: 44px;
+            line-height: 1.3;
+        }
+
+        /* On smaller screens, buttons take more width */
+        @media (max-width: 600px) {
+            .btn {
+                flex: 1 1 calc(50% - 0.8rem);
+                min-width: 140px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .btn {
+                flex: 1 1 100%;
+            }
         }
 
         .btn:hover {
@@ -72,18 +94,24 @@
             transform: translateY(-2px);
         }
 
+        /* Touch feedback for mobile */
+        .btn:active {
+            transform: translateY(0px);
+            background: #252525;
+        }
+
         /* About Section */
         .about-section {
             background: #0f0f0f;
             border: 1px solid #1f1f1f;
             border-radius: 24px;
-            padding: 2rem;
-            margin: 2rem 0;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
             text-align: center;
         }
 
         .about-section h2 {
-            font-size: 1.5rem;
+            font-size: clamp(1.2rem, 5vw, 1.5rem);
             margin-bottom: 1rem;
             font-weight: 600;
         }
@@ -91,7 +119,7 @@
         .about-section p {
             color: #aaa;
             margin-bottom: 1rem;
-            font-size: 0.95rem;
+            font-size: clamp(0.85rem, 3vw, 0.95rem);
         }
 
         .about-section .verse {
@@ -100,16 +128,21 @@
             margin-top: 1rem;
             padding-top: 1rem;
             border-top: 1px solid #222;
+            font-size: clamp(0.8rem, 3vw, 0.9rem);
         }
 
         /* Footer */
         .footer {
             text-align: center;
             color: #4a4a4a;
-            font-size: 0.75rem;
-            margin-top: 3rem;
+            font-size: clamp(0.65rem, 2.5vw, 0.75rem);
+            margin-top: 2rem;
             padding-top: 1.5rem;
             border-top: 1px solid #1a1a1a;
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
         }
 
         .footer a {
@@ -119,6 +152,28 @@
 
         .footer a:hover {
             color: #aaa;
+        }
+
+        /* Improve tap targets for links in footer */
+        .footer a {
+            display: inline-block;
+            padding: 4px 2px;
+            min-height: 36px;
+        }
+
+        /* Better spacing on very small devices */
+        @media (max-width: 480px) {
+            body {
+                padding: 0.75rem;
+            }
+            
+            .about-section {
+                padding: 1.2rem;
+            }
+            
+            .button-grid {
+                gap: 0.6rem;
+            }
         }
     </style>
 </head>
@@ -137,8 +192,8 @@
         <a href="sat.html" class="btn">🎯 SAT</a>
         <a href="matric.html" class="btn">📚 Matriculation</a>
         <a href="intermediate.html" class="btn">📘 Intermediate</a>
-        <a href="entry-tests.html" class="btn">📝 Entry Tests (NET/MDCAT/LAT)</a>
-        <a href="olympiads.html" class="btn"> Olympiad Preperation Guides (NSTC/NPTC/NMTC/IOI)</a>
+        <a href="entry-tests.html" class="btn">📝 Entry Tests</a>
+        <a href="olympiads.html" class="btn">🏅 Olympiad Guides</a>
     </div>
 
     <!-- About Section -->
@@ -148,7 +203,8 @@
         <p>This platform is my <strong>sadaqah jariyah</strong> — a small thing that I hope keeps giving long after I'm gone. No ads. No paywalls. Just resources, organized with care, available to anyone who needs them.</p>
         <p>If this helps you pass one exam, get into one university, or understand one topic — that's enough. That's the whole point.</p>
         <div class="verse">
-            <em>"And do good, for Allah certainly loves the good-doers.(Al-Baqarah 195)"</em>
+            <em>"And do good, for Allah certainly loves the good-doers."</em><br>
+            (Al-Baqarah 195)
         </div>
     </div>
 
