@@ -70,10 +70,9 @@
             font-size: 0.9rem;
         }
 
-        /* Test Sections Grid */
         .tests-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
             gap: 1.2rem;
             margin: 1.5rem 0;
         }
@@ -105,7 +104,7 @@
 
         .test-content {
             padding: 1rem;
-            max-height: 400px;
+            max-height: 500px;
             overflow-y: auto;
         }
 
@@ -118,7 +117,7 @@
             margin-bottom: 0.5rem;
             text-decoration: none;
             color: #e5e5e5;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             transition: all 0.2s;
             word-break: break-all;
         }
@@ -131,9 +130,18 @@
 
         .resource-link small {
             color: #888;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             display: block;
             margin-top: 0.2rem;
+        }
+
+        .section-title {
+            color: #d4a853;
+            margin: 0.8rem 0 0.5rem 0;
+            font-size: 0.85rem;
+            font-weight: bold;
+            border-left: 2px solid #d4a853;
+            padding-left: 0.5rem;
         }
 
         .back-home {
@@ -162,7 +170,7 @@
             border-top: 1px solid #1a1a1a;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 800px) {
             .tests-grid {
                 grid-template-columns: 1fr;
             }
@@ -184,66 +192,122 @@
     <div class="subtitle">Free resources for university entrance exams in Pakistan — past papers, syllabus, preparation guides</div>
 
     <div class="tests-grid">
-        <!-- NET Engineering -->
+        <!-- NET Engineering (same as before) -->
         <div class="test-card">
-            <div class="test-header">
-                <span>🎯</span> NET Engineering
-            </div>
+            <div class="test-header"><span>🎯</span> NET Engineering</div>
             <div class="test-content">
-                <a href="https://drive.google.com/drive/folders/1rVTGvIoV-Vc_anp49a61pzJFoOe0pZSM" class="resource-link" target="_blank">📚 Main Resource 1 - Past MCQs, FLPs, KIPS Fung Series, STEP Notes, OETP Books <small>Complete collection</small></a>
-                <a href="https://drive.google.com/drive/folders/1B_5cmetCdPsZIKqm_k7yXGZad00xnj9e" class="resource-link" target="_blank">📚 Main Resource 2 - Past MCQs, FLPs, Stars Academy Notes, KIPS Notes</a>
-                <a href="https://drive.google.com/drive/folders/1R6A-1OFO15iRESZZQLiYWodhwrNCc5NR" class="resource-link" target="_blank">📚 Main Resource 3 - MCQs, Tips and Tricks</a>
-                <a href="https://drive.google.com/drive/folders/1VV1R99dIiZrdNxWUc_TPElt4-Hb0r5Pb" class="resource-link" target="_blank">📚 Main Resource 4 - PTB Books, Engineering Books, GIKI, PIEAS</a>
-                <a href="https://drive.google.com/drive/folders/1Vo5rJ31UEBj73jwvYJ1pxY4oT5scdFBw" class="resource-link" target="_blank">📚 Main Resource 5 - Books, Handwritten Notes, MCAT, ECAT, Past Papers</a>
-                <a href="https://drive.google.com/drive/folders/1ndjiAj9lMaDKwBhcBGQAEfczMHJhExFt" class="resource-link" target="_blank">📚 Main Resource 6 - Books, MCQs, Formulas, OETP Books, KIPS Fung Series</a>
-                <a href="https://drive.google.com/drive/folders/1GFyegwO1xNDbFJ-hVUbBvIwnDlx0QzDN" class="resource-link" target="_blank">📚 Main Resource 7 - Additional Resources</a>
+                <a href="https://drive.google.com/drive/folders/1rVTGvIoV-Vc_anp49a61pzJFoOe0pZSM" class="resource-link" target="_blank">📚 Resource 1 - Past MCQs, FLPs, KIPS Fung, STEP Notes, OETP <small>Complete collection</small></a>
+                <a href="https://drive.google.com/drive/folders/1B_5cmetCdPsZIKqm_k7yXGZad00xnj9e" class="resource-link" target="_blank">📚 Resource 2 - Past MCQs, FLPs, Stars Academy, KIPS Notes</a>
+                <a href="https://drive.google.com/drive/folders/1R6A-1OFO15iRESZZQLiYWodhwrNCc5NR" class="resource-link" target="_blank">📚 Resource 3 - MCQs, Tips and Tricks</a>
+                <a href="https://drive.google.com/drive/folders/1VV1R99dIiZrdNxWUc_TPElt4-Hb0r5Pb" class="resource-link" target="_blank">📚 Resource 4 - PTB Books, Engineering Books, GIKI, PIEAS</a>
+                <a href="https://drive.google.com/drive/folders/1Vo5rJ31UEBj73jwvYJ1pxY4oT5scdFBw" class="resource-link" target="_blank">📚 Resource 5 - Books, Handwritten Notes, MCAT, ECAT, Past Papers</a>
+                <a href="https://drive.google.com/drive/folders/1ndjiAj9lMaDKwBhcBGQAEfczMHJhExFt" class="resource-link" target="_blank">📚 Resource 6 - Books, MCQs, Formulas, OETP Books, KIPS Fung</a>
+                <a href="https://drive.google.com/drive/folders/1GFyegwO1xNDbFJ-hVUbBvIwnDlx0QzDN" class="resource-link" target="_blank">📚 Resource 7 - Additional Resources</a>
                 <a href="https://drive.google.com/drive/folders/1LmEutlaPoPS3uk-DY65yMZHg64zLw3rV" class="resource-link" target="_blank">📚 NUST Engineering Special</a>
             </div>
         </div>
 
         <!-- NET Business -->
         <div class="test-card">
-            <div class="test-header">
-                <span>💼</span> NET Business
-            </div>
+            <div class="test-header"><span>💼</span> NET Business</div>
             <div class="test-content">
-                <a href="https://drive.google.com/drive/folders/1H_IDU54ZwVYbWY4qbzdS1MAkj961npex" class="resource-link" target="_blank">📚 Business Resource 1 - Random MCQs, PakPrep MCQs, Past MCQs, Booklets</a>
+                <a href="https://drive.google.com/drive/folders/1H_IDU54ZwVYbWY4qbzdS1MAkj961npex" class="resource-link" target="_blank">📚 Business Resource 1 - Random MCQs, PakPrep, Past MCQs, Booklets</a>
                 <a href="https://drive.google.com/drive/folders/11_c01KzcvP2XPXyUcJlKKcbaM1o1bjA3" class="resource-link" target="_blank">📚 Business Resource 2 - Practice MCQs, Books, Formulas</a>
                 <a href="https://drive.google.com/drive/folders/1rjSA-LdDpU0OqHrumML4QQXowhL2USOi" class="resource-link" target="_blank">📚 Business Resource 3 - Handwritten Notes, Formulas, Guide to NUST</a>
                 <a href="https://drive.google.com/drive/folders/1YJDV-yvW5D744TpEI6hXooESrjraLlB4" class="resource-link" target="_blank">📚 Business Resource 4 - KIPS and OETP Books, MCQs</a>
             </div>
         </div>
 
-        <!-- MDCAT -->
+        <!-- MDCAT - Main Card with all new resources -->
         <div class="test-card">
-            <div class="test-header">
-                <span>🩺</span> MDCAT
-            </div>
+            <div class="test-header"><span>🩺</span> MDCAT - Main Resources</div>
             <div class="test-content">
-                <a href="https://drive.google.com/drive/folders/1UkjPt31_Vw-JaTS4ckpFhNg44bWkI85h" class="resource-link" target="_blank">📝 Past MDCAT Papers</a>
-                <a href="https://drive.google.com/drive/folders/1sFh2TQ-1Q76a05TsXYndl6W24e9xbgmS" class="resource-link" target="_blank">📝 PMC Paid Practice Tests</a>
-                <a href="https://drive.google.com/drive/folders/1gnCqVWeCCV4cJp9waNtFy4qcExTDmgs_" class="resource-link" target="_blank">📚 Dogar MDCAT Books</a>
-                <a href="https://drive.google.com/drive/folders/1P1Afq4nhlXYbO3Jn7BASQOjR07v_XrSv" class="resource-link" target="_blank">📚 Grip Books</a>
-                <a href="https://drive.google.com/drive/folders/1VwM2Gk-b1nOtZh9SJ0RRWOpTaInXvaEf" class="resource-link" target="_blank">📚 Punjab College Books</a>
+                <div class="section-title">📚 Complete Book Series</div>
+                <a href="https://drive.google.com/drive/folders/1-9rgr0d6R37pRCsyn7HQXnlUa5yhZcIP" class="resource-link" target="_blank">📚 MEGA LIBRARY - KIPS, BOM, ALI, GOLDEN, CHAMPION, APPLE, BIO BOOST, UMAR SANI, TOPPER NOTES, WAK, GENIUS, STAR, PREMED, NEERPER, GRIP, WREN & MARTIN, MOIN, ENGEECON, QCA, AFNS, AIMS, AL REHMAN, PTB, KTB, STB, BTB, FTB, ALLEN CHEMISTRY, AMC, ANEES HUSSAIN, BRILLIANT, CARVAN, DIAMOND, CONCEPTUAL, DOCTOR INN, DOGAR, ERA, ERRORLESS, EXPERT, FUTURE DOCTOR, HANDBOOKS, INSIGHT, NATIONAL BIOLOGY, RED SPOT, SAK PLAN, SCHOLAR, SKN, SMART BRAIN, STEP, TABS, TORCIA, ZAYAN</a>
+                
+                <div class="section-title">📝 Shortlistings</div>
+                <a href="https://drive.google.com/drive/folders/1dGCmMP_nGtVsARG_R5cN-nIcp-FVJiNn" class="resource-link" target="_blank">📝 FTB Shortlisting</a>
+                <a href="https://drive.google.com/drive/folders/1S7mtgmwndNI2QYK7hDeIKyTV9gQKfCo1" class="resource-link" target="_blank">📝 KIPS Biology Shortlisting</a>
+                <a href="https://drive.google.com/drive/folders/14cR0eTZnXdizDbtMGoOGvlp2aqkePiH4" class="resource-link" target="_blank">📝 Mnemonics</a>
+                <a href="https://drive.google.com/drive/folders/13exuBHjBScW0VVoyJZ88GQg_W3JQvywV" class="resource-link" target="_blank">📝 PreMed Shortlisting</a>
+                <a href="https://drive.google.com/drive/folders/1tfxf6TKBIb5Sf2vnrCXTqxInrV_6qrZs" class="resource-link" target="_blank">📝 BTB and KPK Shortlisting</a>
+                
+                <div class="section-title">📍 Board-Specific Shortlistings</div>
+                <a href="https://2667.us.kg/notes" class="resource-link" target="_blank">📚 SZABMU / Sindh Students Shortlisting</a>
+                <a href="https://drive.google.com/drive/folders/10yN1acpfmd73JzEoyrvV3muetvXWRnAq" class="resource-link" target="_blank">📚 SZABMU Drive Backup</a>
+                <a href="https://drive.google.com/drive/folders/18_H3KworoIJGoe54WJxyD9Hf-6aYoeOx" class="resource-link" target="_blank">📚 Punjab & KPK Students Shortlisting (Option 1)</a>
+                
+                <div class="section-title">📖 Newly Added Chapters Notes</div>
+                <a href="https://drive.google.com/file/d/1eC5-2B_JOgVi6LrPH8gAYuqZ7cUqbwwo/view?usp=drivesdk" class="resource-link" target="_blank">📘 Homeostasis Notes</a>
+                <a href="https://drive.google.com/file/d/1tbectP2UAUxV5jdkAB6ich-kAXlqVoW3/view?usp=drivesdk" class="resource-link" target="_blank">📘 Biotechnology Notes</a>
+                <a href="https://drive.google.com/file/d/1_V6dsx71eEzS-Jq9DA9HfHkvURSOd3wx/view?usp=drivesdk" class="resource-link" target="_blank">📘 Fluid Dynamics Notes</a>
+                <a href="https://drive.google.com/file/d/1by7hoOHgFIzK2A5rvJkfcR6lRrwb2xeB/view?usp=drivesdk" class="resource-link" target="_blank">📘 Alternating Current Notes</a>
+                <a href="https://drive.google.com/drive/folders/1Q1ZhAqUMEpVTRQVNqLJHgWrZe4org5fF" class="resource-link" target="_blank">📚 All Newly Added Chapters Notes Folder</a>
+                
+                <div class="section-title">📖 Best Notes (Public Demand)</div>
+                <a href="https://drive.google.com/file/d/1sHRg-mPGp7tfuQt7ORmBig563UW6O1bD/view?usp=drivesdk" class="resource-link" target="_blank">📘 WAK Organic Chemistry Notes</a>
+                <a href="https://drive.google.com/drive/folders/1plzXEON9W1CIeUku5ghPg2Hsut6l2lJk" class="resource-link" target="_blank">📘 Inorganic Chemistry Notes</a>
+                <a href="https://drive.google.com/file/d/1sE-qZmSS7gXYd8gGH5PT3MGvX-FOon3d/view?usp=drivesdk" class="resource-link" target="_blank">📘 Updated Master Book Biology</a>
+                <a href="https://drive.google.com/file/d/1sBaS3_Wg2UTxYl8pJT7CWhFXuGXSaqcs/view?usp=drivesdk" class="resource-link" target="_blank">📘 M. Ali's Biology Notes</a>
+                <a href="https://drive.google.com/file/d/1s4_OjxjdeK6IQK98CG-HMmKtfBCZsmp_/view?usp=drivesdk" class="resource-link" target="_blank">📘 Physics Wallah 1st Year</a>
+                <a href="https://drive.google.com/file/d/1s6840sADQS1nrhFiJ1ivWW9gVzqR9b5V/view?usp=drivesdk" class="resource-link" target="_blank">📘 Physics Wallah 2nd Year</a>
             </div>
         </div>
 
-        <!-- ECAT -->
+        <!-- MDCAT - SMART Material 2025 -->
         <div class="test-card">
-            <div class="test-header">
-                <span>🔧</span> ECAT
+            <div class="test-header"><span>📚</span> MDCAT - SMART Material 2025</div>
+            <div class="test-content">
+                <a href="https://drive.google.com/file/d/1tW6g98tTo6ExeElH75LlbMpdD180SDQQ/view?usp=drivesdk" class="resource-link" target="_blank">📖 Spark MDCAT Chemistry 2025 Complete</a>
+                <a href="https://drive.google.com/file/d/1BuKPKuBoxaoWoLzmZ4Im4Ldjegl7Saec/view?usp=drivesdk" class="resource-link" target="_blank">📖 Zayan Physics 2025 Edition</a>
+                <a href="https://drive.google.com/file/d/14XpvEb0yBKb-ulaBRStx5wW2nWJn7lon/view?usp=drivesdk" class="resource-link" target="_blank">📖 BOM Topicwise Past Papers 2025</a>
+                <a href="https://drive.google.com/file/d/1J5-yagTLIcVuf1r3BUJ6yM3nWMdIN_3k/view?usp=drivesdk" class="resource-link" target="_blank">📖 Nearpeer Practice Book Vol 1 & 2 Complete 2025</a>
+                <a href="https://drive.google.com/file/d/1agojR_T7tGVqJDntbKtSplp1W245j3l9/view?usp=drivesdk" class="resource-link" target="_blank">📖 Compact Physics</a>
+                <a href="https://drive.google.com/file/d/1EXoiR-oKs1zlDrGznJOeLJaHlsl-x1fC/view?usp=drivesdk" class="resource-link" target="_blank">📖 Genius Physics</a>
+                <a href="https://drive.google.com/file/d/1opbm4SzP23SdzdTzwPOygz9Cw7eci0BL/view?usp=drivesdk" class="resource-link" target="_blank">📖 BOM 2025 Book</a>
+                <a href="https://drive.google.com/file/d/1CAdHF1bbqNoBoIUGzxRd7J7MRhVuYeWb/view?usp=drivesdk" class="resource-link" target="_blank">📖 Dr. Sohail Biology</a>
             </div>
+        </div>
+
+        <!-- MDCAT - Practice & Supplement -->
+        <div class="test-card">
+            <div class="test-header"><span>✏️</span> MDCAT - Practice & Supplement</div>
+            <div class="test-content">
+                <a href="https://drive.google.com/drive/folders/1o9mqdoEcXyC1FVApgMPXXXUnrrg4sfml" class="resource-link" target="_blank">📝 Step Worksheets 2023</a>
+                <a href="https://drive.google.com/drive/folders/1sCwFMU7K887qeBMPc2I9lzkUqnqG-kxK" class="resource-link" target="_blank">📝 Skill AIMS MDCAT Physics & Chemistry Books</a>
+                <a href="https://drive.google.com/drive/folders/1tXItEmip4rHGf-GAlrQ74acXuq-l9xzS" class="resource-link" target="_blank">📝 PreMed Paid Material</a>
+                <a href="https://drive.google.com/drive/folders/17SDtTj7DbmBBg_pdX9NTuAEKadxVsp8c" class="resource-link" target="_blank">📝 Nearpeer 2024 Books</a>
+                <a href="https://drive.google.com/drive/folders/1GxDYrpMuMxzA676_a_CClJ7ObrTksllq" class="resource-link" target="_blank">📝 Physics in Second Practice Books</a>
+                <a href="https://drive.google.com/drive/folders/17CmHvaMASqPEEo0FjyrU87FrJIiGQQ89" class="resource-link" target="_blank">📝 Mentr Series</a>
+                <a href="https://drive.google.com/drive/folders/16Eg4pupIGqZLyuf_SvQsW2M93YW6TkGk" class="resource-link" target="_blank">📝 KIPS Practice Books 2025</a>
+                <a href="https://drive.google.com/drive/folders/1diAYYk5Nom5LOswKYWLI-Z5KvPvmwU_-" class="resource-link" target="_blank">📝 KIPS Prep Books 2025</a>
+                <a href="https://drive.google.com/drive/folders/1oWctli6gnH1SavB2UjxhhxIwT9aTYRq5" class="resource-link" target="_blank">📝 MDCAT Notes Collection</a>
+                <a href="https://drive.google.com/file/d/1ohxOKWwv2oSPCuHiIldNsRxq0cCtToAo/view?usp=drivesdk" class="resource-link" target="_blank">📝 WAK Handwritten Notes</a>
+                <a href="https://drive.google.com/drive/folders/1GQvHUDP7puBIZXRpBCSkq1eob5jMHbMn" class="resource-link" target="_blank">📝 KIPS MDCAT Supplement Topics (New Syllabus)</a>
+            </div>
+        </div>
+
+        <!-- MDCAT - Past Papers -->
+        <div class="test-card">
+            <div class="test-header"><span>📄</span> MDCAT - Past Papers</div>
+            <div class="test-content">
+                <a href="https://drive.google.com/drive/folders/1UkjPt31_Vw-JaTS4ckpFhNg44bWkI85h" class="resource-link" target="_blank">📄 Past MDCAT Papers</a>
+                <a href="https://drive.google.com/drive/folders/1sFh2TQ-1Q76a05TsXYndl6W24e9xbgmS" class="resource-link" target="_blank">📄 PMC Paid Practice Tests</a>
+            </div>
+        </div>
+
+        <!-- ECAT (same as before) -->
+        <div class="test-card">
+            <div class="test-header"><span>🔧</span> ECAT</div>
             <div class="test-content">
                 <a href="https://drive.google.com/drive/folders/1EquXfGRfUi0JzNh46S432cdfkYxkNsfp" class="resource-link" target="_blank">📝 ECAT Past Papers</a>
                 <a href="https://drive.google.com/drive/folders/1Vo5rJ31UEBj73jwvYJ1pxY4oT5scdFBw" class="resource-link" target="_blank">📚 ECAT Study Material (in NET folder)</a>
             </div>
         </div>
 
-        <!-- University Past Papers -->
+        <!-- University Past Papers (same as before) -->
         <div class="test-card">
-            <div class="test-header">
-                <span>🏛️</span> University Past Papers
-            </div>
+            <div class="test-header"><span>🏛️</span> University Past Papers</div>
             <div class="test-content">
                 <a href="https://drive.google.com/drive/folders/1Vo5rJ31UEBj73jwvYJ1pxY4oT5scdFBw" class="resource-link" target="_blank">📚 University Past Papers (Main)</a>
                 <a href="https://drive.google.com/drive/folders/1GG1xRtomQVl6O0-HNhlFPQ2bY6AIXvKC" class="resource-link" target="_blank">📚 FAST Past Papers Solved</a>
@@ -251,11 +315,9 @@
             </div>
         </div>
 
-        <!-- General Study Material -->
+        <!-- General Study Material (same as before) -->
         <div class="test-card">
-            <div class="test-header">
-                <span>📖</span> General Study Material
-            </div>
+            <div class="test-header"><span>📖</span> General Study Material</div>
             <div class="test-content">
                 <a href="https://drive.google.com/drive/folders/17jkTfqatCaWw7FCoAa7Wa2-lDwBTAxoG" class="resource-link" target="_blank">📚 KIPS Books</a>
                 <a href="https://drive.google.com/drive/folders/1tIZ09yEhNxdr_FCKyyB8ANze7tGX3ZvH" class="resource-link" target="_blank">📚 STEP Books</a>
@@ -268,23 +330,13 @@
         </div>
     </div>
 
-    <!-- Credit Section -->
-    <div style="background: #0f0f0f; border: 1px solid #1f1f1f; border-radius: 20px; padding: 1rem; margin-top: 1.5rem; text-align: center;">
-        <p style="color: #888; font-size: 0.8rem;">🙏 Special thanks to <strong>Moazzam Altamush</strong> for contributing these resources.</p>
-        <p style="color: #666; font-size: 0.7rem; margin-top: 0.5rem;">Resources shared for the benefit of all students. May Allah reward the contributors.</p>
-    </div>
-
     <a href="index.html" class="back-home">← Back to Home</a>
 
     <div class="footer">
         <p>Built with intention. Your du'as are my fuel. 🤲</p>
         <p>No ads. No paywalls. Free forever.</p>
-        <p>last updated: March 2026</p>
+        <p>last updated: April 2026</p>
     </div>
 </div>
 </body>
 </html>
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/<unique-path>/script.js"></script>
